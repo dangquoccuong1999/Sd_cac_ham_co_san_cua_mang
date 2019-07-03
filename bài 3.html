@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt('Mời bạn nhập');
+    let arr=[];
+    for(let i=0; i<input.length; i++){
+        if(input[i] == input[i].toUpperCase()){
+            arr.push(input[i].toLowerCase());
+        }
+        else if(input[i] == input[i].toLowerCase()){
+            arr.push(input[i].toUpperCase());
+        }
+    }
+    document.write(arr.join(''));
+</script>
+</body>
+</html>
